@@ -1,6 +1,6 @@
 import React, { Component,Fragment } from 'react';
 import './App.css';
-import {HashRouter as Router,Route,Switch,Redriect,NavLink} from 'react-router-dom'
+import {HashRouter as Router,Route,Switch,Redirect,NavLink} from 'react-router-dom'
 import ReactLoading from 'react-loadable'
 import Loading from './Loding/loading'
 import store from '../store/index'
@@ -34,21 +34,24 @@ class App extends Component {
       <Router>
         <Fragment>
             <Provider store={store}>
-                <Route path="/home" render={()=>{
-                    return <Home/>
-                }}/>
-                <Route path="/ticket" render={()=>{
-                    return <Ticket/>
-                }}/>
-                <Route path="/mall" render={()=>{
-                    return <Mall/>
-                }}/>
-                <Route path="/find" render={()=>{
-                    return <Find/>
-                }}/>
-                <Route path="/mine" render={()=>{
-                    return <Mine/>
-                }}/>
+                <Switch>
+                    <Route path="/home" exact render={()=>{
+                        return <Home/>
+                    }}/>
+                    <Route path="/ticket" render={()=>{
+                        return <Ticket/>
+                    }}/>
+                    <Route path="/mall" render={()=>{
+                        return <Mall/>
+                    }}/>
+                    <Route path="/find" render={()=>{
+                        return <Find/>
+                    }}/>
+                    <Route path="/mine" render={()=>{
+                        return <Mine/>
+                    }}/>
+                    <Redirect path="/" to="/home"></Redirect>
+                </Switch>
             </Provider>
             <div className="footer">
                 <NavLink to="/home">首页</NavLink>

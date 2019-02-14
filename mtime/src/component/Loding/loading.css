@@ -1,0 +1,13 @@
+.loading{
+    height:100%;
+    width:100%;
+    position: relative;
+}
+.loading_img{
+    display:table-cell;
+    vertical-align:middle;
+    font-size:2rem;
+    position: absolute;
+    top:4rem;
+    left:2.7rem;
+}
