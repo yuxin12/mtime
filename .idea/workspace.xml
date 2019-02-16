@@ -245,7 +245,7 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yuxin" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
@@ -284,6 +284,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550110222418</updated>
+      <workItem from="1550110226513" duration="13392000" />
       <workItem from="1550110226513" duration="12782000" />
       <workItem from="1550130375391" duration="9585000" />
       <workItem from="1550149007853" duration="9872000" />
@@ -294,6 +295,9 @@
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="78380000" />
+    <option name="totallyTimeSpent" value="13392000" />
+    <option name="totallyTimeSpent" value="22367000" />
+    <option name="totallyTimeSpent" value="77315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
