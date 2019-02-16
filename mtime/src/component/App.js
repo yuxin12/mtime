@@ -28,6 +28,34 @@ const Mine =ReactLoading({
     loader:()=>import('./mine/index'),
     loading:Loading
 })
+const Search =ReactLoading({
+    loader:()=>import('./search/index'),
+    loading:Loading
+})
+const News =ReactLoading({
+    loader:()=>import('./news/index'),
+    loading:Loading
+})
+const Moves_d =ReactLoading({
+    loader:()=>import('./move/index'),
+    loading:Loading
+})
+const Actorlist =ReactLoading({
+    loader:()=>import('./move/component/actorList/index'),
+    loading:Loading
+})
+const Imagelist_d =ReactLoading({
+    loader:()=>import('./move/component/allimage/index'),
+    loading:Loading
+})
+const Contentlist_d =ReactLoading({
+    loader:()=>import('./move/component/content/index'),
+    loading:Loading
+})
+const Contentdetail_d =ReactLoading({
+    loader:()=>import('./move/component/contentDetails/index'),
+    loading:Loading
+})
 class App extends Component {
   render() {
     return (
@@ -50,6 +78,13 @@ class App extends Component {
                     <Route path="/mine" render={()=>{
                         return <Mine/>
                     }}/>
+                    <Route path="/search" component={Search}/>
+                    <Route path="/news/:newsId/:t" component={News}/>
+                    <Route path="/move/:id" component={Moves_d}/>
+                    <Route path="/actorlist/:id" component={Actorlist}/>
+                    <Route path="/imagelist_d/:id" component={Imagelist_d}/>
+                    <Route path="/contentlist/:id" component={Contentlist_d}/>
+                    <Route path="/contentdetails/:id" exact component={Contentdetail_d}/>
                     <Redirect path="/" to="/home"></Redirect>
                 </Switch>
             </Provider>

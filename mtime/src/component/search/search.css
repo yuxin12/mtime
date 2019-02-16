@@ -1,0 +1,33 @@
+.search_header_d{
+    background: #1c2635;
+    height:1rem;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    padding:0 .3rem;
+}
+.search_goback_d{
+    height:.6rem;
+    width:.56rem;
+    font-size:.5rem;
+    color:#fff;
+    position: relative;
+    top:-.15rem;
+}
+.search_header_input_d{
+    height:.6rem;
+    width:5rem;
+}
+.search_search_btn{
+    height:.6rem;
+    width:1rem;
+    font-size:.34rem;
+    color:#fff;
+    background: #1c2635;
+    border:.04rem solid #ddd;
+    border-radius: .1rem;
+}

@@ -5,6 +5,9 @@
 .home_main{
     height:100%;
     width:100%;
+    position: relative;
+    top:1rem;
+
 }
 .header_d{
     background: #1c2635;
@@ -38,6 +41,8 @@
 .hotMovesList{
     height:7rem;
     width:100%;
+    margin-bottom: .5rem;
+    background:#fff;
 }
 .hotMovesList ul{
    height:7rem;
@@ -49,6 +54,12 @@
     width:25%;
     float: left;
 }
+.hotMovesList ul li a{
+    height:3.5rem;
+    width:100%;
+    float: left;
+    color:#000;
+}
 .hotMovesList ul li img{
     height:70%;
     width:100%;
@@ -58,8 +69,80 @@
     font-size: .32rem;
     font-weight: 800;
 }
-.jaj{
-    height:10rem;
+.hotMoves{
+    height:1rem;
     width:100%;
-    background: pink;
+    padding:0 .2rem;
+}
+.hotMoves a{
+    font-size:.5rem;
+    line-height: 1rem;
+    color:#000;
+    font-weight:800;
+    display: block;
+}
+.hotMoves_a{
+    float: left;
+}
+.hotMoves_b{
+    float: right;
+}
+.adv_d{
+    height:3rem;
+    width:100%;
+    margin-top:.3rem;
+    border-top:.02rem #ccc solid;
+}
+.adv_d img{
+    height:100%;
+    width:100%;
+}
+.hotpoint_p_d{
+    height:.7rem;
+    font-size:.4rem;
+    font-weight:800;
+    color:#000;
+    margin-top:.4rem;
+}
+.hotpoint_li_d{
+    height:3rem;
+    width:100%;
+}
+.hotpoint_li_d a{
+    height:100%;
+    display: block;
+    width:100%;
+}
+.hotpoint_img_d{
+    height:2rem;
+    width:40%;
+    float: left;
+}
+.hotpoint_div_d{
+    height:3rem;
+    width:60%;
+    float: left;
+    padding-left:.3rem;
+    position: relative;
+}
+.hotpoint_title_d{
+    font-size: .4rem;
+    font-weight:800;
+    color:#333;
+    position: absolute;
+    top:.1rem;
+}
+.hotpoint_desc_d{
+    font-size: .30rem;
+    font-weight:200;
+    color:#777;
+    position: absolute;
+    top:.8rem;
+}
+.hotpoint_time_d{
+    font-size: .30rem;
+    font-weight:200;
+    color:#777;
+    position: absolute;
+    top:1.3rem;
 }

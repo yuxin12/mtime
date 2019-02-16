@@ -1,10 +1,10 @@
 import React,{Component} from 'react'
 import {connect} from 'react-redux'
+import {NavLink} from 'react-router-dom'
 import '../home.css'
 class HotMovesList_d extends Component{
     render (){
         let {hotMovesList}=this.props
-        console.log(this.props);
         return (
             <div className="hotMovesList">
                 <ul>
@@ -13,8 +13,10 @@ class HotMovesList_d extends Component{
                             if(index<=7){
                                 return (
                                     <li key={index}>
-                                        <img src={item.img} alt=""/>
-                                        <p>{item.tCn}</p>
+                                        <NavLink to={"/move/"+item.id}>
+                                            <img src={item.img} alt=""/>
+                                            <p>{item.tCn}</p>
+                                        </NavLink>
                                     </li>
                                 )
                             }
