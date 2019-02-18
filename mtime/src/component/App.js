@@ -56,6 +56,10 @@ const Contentdetail_d =ReactLoading({
     loader:()=>import('./move/component/contentDetails/index'),
     loading:Loading
 })
+const  SearchList = ReactLoading({
+    loader:()=>import("./mall/components/searchlist"),
+    loading:Loading
+})
 class App extends Component {
   render() {
     return (
@@ -85,6 +89,9 @@ class App extends Component {
                     <Route path="/imagelist_d/:id" component={Imagelist_d}/>
                     <Route path="/contentlist/:id" component={Contentlist_d}/>
                     <Route path="/contentdetails/:id" exact component={Contentdetail_d}/>
+                    <Route path="/mallsearchlist" render={()=>{
+                        return <SearchList searchID={25}/>
+                    }}/>
                     <Redirect path="/" to="/home"></Redirect>
                 </Switch>
             </Provider>
