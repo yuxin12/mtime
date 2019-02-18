@@ -28,6 +28,10 @@ const Mine =ReactLoading({
     loader:()=>import('./mine/index'),
     loading:Loading
 })
+const  SearchList = ReactLoading({
+    loader:()=>import("./mall/components/searchlist"),
+    loading:Loading
+})
 class App extends Component {
   render() {
     return (
@@ -49,6 +53,9 @@ class App extends Component {
                     }}/>
                     <Route path="/mine" render={()=>{
                         return <Mine/>
+                    }}/>
+                    <Route path="/mallsearchlist" render={()=>{
+                        return <SearchList searchID={25}/>
                     }}/>
                     <Redirect path="/" to="/home"></Redirect>
                 </Switch>

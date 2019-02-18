@@ -1,0 +1,220 @@
+.mall{
+    width: 100%;
+    height: 100%;
+    background: #f6f6f6;
+}
+p,h2{
+    text-align: center;
+    margin: 0;
+}
+
+/* 轮播图css */
+.malllunbo{
+    background: #fff;
+    width: 100%;
+    height: 5.05rem;
+}
+.malllunbo div{
+    width: 100%;
+    height: 100%;
+}
+.malllunbo .ant-carousel .slick-slide img{
+    width: 100%;
+    height: 5.05rem;
+}
+
+/* menu */
+.mallmenu,.mallmenu>ul{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.mallmenu ul a{
+    display: block;
+    width:25%;
+    height: 1rem;
+    color: #999;
+}
+.mallmenu ul a li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.mallmenu ul a li img{
+    width: 1rem;
+    height: 1rem;
+}
+.wrapper{
+    background: #fff;
+    width: 100%;
+    height: 80%;
+    margin-top: .88rem;
+}
+.leftad{
+    width: 50%;
+    float:left;
+}
+.rightad{
+    width: 50%;
+    float: left;
+}
+
+.newpros img{
+    width:100%;
+}
+
+
+
+/* WoW */
+.WoW{
+    width: 100%;
+    background: #fff;
+    height:2rem;
+}
+
+.heros{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width:9rem;
+}
+.heros li{
+    margin: 0 .15rem;
+}
+
+/* WoW  Goods*/
+.herosGoods{
+    background: #fff;
+    width: 100%;
+    height: 5.2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.herosGoods li{
+width: 33%;
+height: 2.4rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.herosGoods li img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.herosGoods li p{
+    width: 2rem;
+    /* height: 5rem; */
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+
+/* goods2 */
+.goods{
+    width: 100%;
+    height: 7.3rem;
+    /* background: #f6f6f6; */
+    padding:  0.5rem 0;
+    border-bottom: 0.06rem solid #ccc;
+}
+.goods>img{
+    width: 100%;
+}
+.goodsheader {
+    width: 100%;
+    height: 0.8rem;
+    background: #fff;
+
+}
+.goodsheader p{
+    text-align: right;
+    /* line-height: 100%; */
+    font-size: 0.36rem;
+    padding-right: .2rem;
+}
+.goodsheader p b{
+    display: inline-block;
+    float: left;padding-left: .2rem;
+}
+.goodslist{
+    background: #fff;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.goodslist li{
+    background: #fff;
+    width: 2.3rem;
+    height:2.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.goodslist li img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.goodslist li p{
+    width: 2rem;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.goodsPrice{
+        font-size: .36rem;
+        font-weight: 600;color:#f15353;
+}
+
+/* recommendGoods */
+.recommendGoods{
+    width:100%;
+    margin: 1rem 0.2rem 0;
+    background:#f6f6f6;
+}
+.recommendGoods ul{
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.recommendGoods li{
+    background: #fff;
+    width: 49%;
+    height: 4.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1rem 0;
+}
+.recommendGoods li img{
+    width: 100%;
+    height: 50%;
+}
+.ziying{
+    display: inline-block;
+    width: .5rem;
+    height: .36rem;
+    line-height: .3rem;
+    font-size: .2rem;
+    border: 2px solid #f15353;
+    color:#f15353;
+    font-weight: 800;
+}
+.recommendGoods li div{
+    display: inline-block;
+}
