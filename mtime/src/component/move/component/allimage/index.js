@@ -4,16 +4,13 @@ import '../../move.css'
 import {withRouter } from 'react-router-dom';
 import action from "../../../../store/action";
 import BScroll from 'better-scroll'
+import Header_all_d from '../../../header/index'
 class ImageList_d extends Component{
     render (){
         let {allImage_d}=this.props;
         console.log(allImage_d)
         return (
             <div className="ImageList_d">
-                <div className="image_active_header_d">
-                    <i className="iconfont image_active_header_goback_d" onClick={this.imageList_goback.bind(this)}>&#xe6b0;</i>
-                    <p className="image_active_header_title_d">全部图片</p>
-                </div>
                 <div className="ImageList_box_d" ref="ImageList_box_d">
                     <div className="ImageList_scroll_d">
                         {
@@ -52,4 +49,4 @@ const mapDispatchToProps=(dispatch)=>({
         dispatch(action.getAllImage_d(this.match.params.id))
     }
 })
-export default withRouter(connect(mapStateToProps,mapDispatchToProps)(ImageList_d))
+export default withRouter(Header_all_d(withRouter(connect(mapStateToProps,mapDispatchToProps)(ImageList_d))))

@@ -8,6 +8,7 @@ import Moves_jieshao_d from './component/jieshao'
 import Move_active_d from './component/actiors'
 import All_image_d from './component/allImage_d'
 import Move_content_d from './component/content_d'
+import Short_connect_d from './component/shortContent'
 import './move.css'
 import BScroll from 'better-scroll'
 class Moves_d extends Component{
@@ -23,6 +24,7 @@ class Moves_d extends Component{
                         <Move_active_d/>
                         <All_image_d/>
                         <Move_content_d/>
+                        <Short_connect_d/>
                     </div>
                 </div>
             </div>
@@ -32,17 +34,19 @@ class Moves_d extends Component{
         this.props.gethotMovesList_details_d()
         this.props.getMoveActor_d();
         this.props.getAllImage_d();
-        this.props.getAllContent_d()
+        this.props.getAllContent_d();
+        this.props.getAllShortContent_d()
         let box=this.refs.hotMovesList_details_main_d;
         var bScroll=new BScroll(box,{
             click:true
         })
-        console.log(bScroll)
     }
 }
-const mapStateToProps=(state)=>({
-    moveDetail_d:state.toJS().move_d.moveDetail_d,
-})
+const mapStateToProps=(state)=>{
+    return {
+        moveDetail_d:state.toJS().move_d.moveDetail_d,
+    }
+}
 const mapDispatchToProps=(dispatch)=>({
     gethotMovesList_details_d(){
         dispatch(action.gethotMovesList_details_d(this.match.params.id))
@@ -54,7 +58,10 @@ const mapDispatchToProps=(dispatch)=>({
         dispatch(action.getAllImage_d(this.match.params.id))
     },
     getAllContent_d(){
-        dispatch(action.getAllContent_d(this.match.params.id))
+        dispatch(action.getAllContentone_d(this.match.params.id))
+    },
+    getAllShortContent_d(){
+        dispatch(action.getAllShortContent_d(this.match.params.id))
     }
 })
 export default connect(mapStateToProps,mapDispatchToProps)(Moves_d)

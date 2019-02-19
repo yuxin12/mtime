@@ -1,6 +1,5 @@
 import React,{Component} from "react"
 import {connect} from 'react-redux'
-import action from "../../../store/action";
 class New_title_d extends Component{
     render(){
         let {newsDetail}=this.props
@@ -16,7 +15,7 @@ class New_title_d extends Component{
     }
 }
 const mapStateToProps=(state)=>({
-    newsDetail:state.toJS().search.newsDetail
+    newsDetail:state.toJS().home.newsDetail
 })
 const mapDispatchToProps=(dispatch)=>({
 

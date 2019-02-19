@@ -1,0 +1,25 @@
+.header_all_d{
+    height:100%;
+    width:100%;
+}
+.header_all_top_d{
+    height:1rem;
+    width:100%;
+    background: #1c2635;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .2rem;
+}
+.header_all_left_d,.header_all_right_d{
+    color:#fff;
+    font-size:.4rem;
+}
+.header_all_center_d{
+    color:#fff;
+    font-size:.4rem;
+}

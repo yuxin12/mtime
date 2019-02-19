@@ -8,6 +8,7 @@ import {Provider} from 'react-redux'
 import '../common/js/flexble'
 import '../common/css/reset.css'
 import "antd/dist/antd.css";
+import {withRouter} from 'react-router-dom'
 const Home=ReactLoading({
     loader:()=>import("./home/index"),
     loading:Loading
@@ -85,9 +86,15 @@ class App extends Component {
                     <Route path="/search" component={Search}/>
                     <Route path="/news/:newsId/:t" component={News}/>
                     <Route path="/move/:id" component={Moves_d}/>
-                    <Route path="/actorlist/:id" component={Actorlist}/>
-                    <Route path="/imagelist_d/:id" component={Imagelist_d}/>
-                    <Route path="/contentlist/:id" component={Contentlist_d}/>
+                    <Route path="/actorlist/:id" render={()=>{
+                        return <Actorlist title="演职员表" icon1="&#xe6b0;"/>
+                    }}/>
+                    <Route path="/imagelist_d/:id" render={()=>{
+                        return <Imagelist_d title="全部图片" icon1="&#xe6b0;"/>
+                    }}/>
+                    <Route path="/contentlist/:id" render={()=>{
+                        return <Contentlist_d title="全部评论" icon1="&#xe6b0;"/>
+                    }}/>
                     <Route path="/contentdetails/:id" exact component={Contentdetail_d}/>
                     <Route path="/mallsearchlist" render={()=>{
                         return <SearchList searchID={25}/>
