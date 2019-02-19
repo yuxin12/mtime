@@ -4,18 +4,18 @@ import '../move.css'
 import {withRouter } from 'react-router-dom';
 class Move_content_d extends Component{
     render (){
-        let {allComments}=this.props
+        let {allCommentsOne,allCommentsNum}=this.props
         return (
             <div className="Move_content_box_d">
                 {
-                    allComments.length>0?<div>
+                    allCommentsOne.length>0?<div>
                         <div className="Move_content_header_d"
                         onClick={this.goContentDetail.bind(this)}>
-                            精选影评({allComments.length})
+                            精选影评({allCommentsNum})
                         </div>
                         <ul className="Move_content_d">
                             {
-                                allComments.map((item,index)=>{
+                                allCommentsOne.map((item,index)=>{
                                     if(index<1){
                                         return (
                                             <li key={index}>
@@ -46,7 +46,8 @@ class Move_content_d extends Component{
     }
 }
 const mapStateToProps=(state)=>({
-    allComments:state.toJS().move_d.allComments
+    allCommentsOne:state.toJS().move_d.allCommentsOne,
+    allCommentsNum:state.toJS().move_d.allCommentsNum
 })
 const mapDispatchToProps=(dispatch)=>({
 

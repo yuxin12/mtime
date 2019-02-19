@@ -1,3 +1,8 @@
+.search_d{
+    background: #eee;
+    height:100%;
+    width:100%;
+}
 .search_header_d{
     background: #1c2635;
     height:1rem;
@@ -9,6 +14,7 @@
     top:0;
     left:0;
     padding:0 .3rem;
+    z-index: 5;
 }
 .search_goback_d{
     height:.6rem;
@@ -30,4 +36,62 @@
     background: #1c2635;
     border:.04rem solid #ddd;
     border-radius: .1rem;
+}
+.search_main_d{
+    position: relative;
+    top:1rem;
+    left:0;
+    height:80%;
+    width:100%;
+}
+.Search_banner_d .ant-carousel .slick-slide {
+    height: 2rem;
+    overflow: hidden;
+}
+
+.Search_banner_d .ant-carousel .slick-slide img {
+    width:100%;
+    height:100%;
+}
+.Search_hotsearch_li_d{
+    padding:0 .3rem;
+    border: .02rem #ccc solid;
+    border-radius: .3rem;
+    float: left;
+    margin:0.2rem .3rem;
+}
+.Search_hotsearch_div_d{
+    padding:.2rem 0;
+    background: #fff;
+    width:100%;
+    height:2rem;
+}
+.Search_history_d h2{
+    line-height:1rem;
+}
+.search_results_li_d{
+    height:2.5rem;
+    width:100%;
+    border-bottom: #ccc solid .02rem;
+    padding:.2rem 0;
+}
+.search_results_div_d{
+    height:100%;
+    width:1.5rem;
+    float: left;
+}
+.search_results_div_d img{
+    height:100%;
+    width:100%;
+}
+.more{
+    height:10rem;
+    width:100%;
+}
+.search_in_mall{
+    line-height:1rem;
+    width:100%;
+    height:1rem;
+    font-size:.4rem;
+    padding-left:.3rem;
 }

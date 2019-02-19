@@ -1,13 +1,29 @@
 import Immutable from 'immutable'
 const FindDefaultState=Immutable.fromJS({
-    newsDetail:{}
+    advList_d:[],
+    keyWord_d:[],
+    searchInputVal_d:"",
+    searchmove_d:[],
 })
 export default (state=FindDefaultState,action)=>{
     switch (action.type){
-        case "GETHOTPOINT_DETAILS":
-            let newStatea=state.updateIn(["newsDetail"],item=>item=action.value);
-            return newStatea;
+        case "GETSEARCHBANNER_D":
+            let newSearchState=state.updateIn(["advList_d"],item=>item=action.value)
+            return newSearchState;
             break;
+        case "GETSEARCHKEYWORD":
+            let newSearchState1=state.updateIn(["keyWord_d"],item=>item=action.value)
+            return newSearchState1;
+            break;
+        case "CHANGEINPUTVAL":
+            let newSearchState2=state.updateIn(["searchInputVal_d"],item=>item=action.value)
+            return newSearchState2;
+            break;
+        case "SEARCHMOVES_D":
+            let newSearchState3=state.updateIn(["searchmove_d"],item=>item=action.value)
+            return newSearchState3;
+            break;
+
     }
     return state;
 }

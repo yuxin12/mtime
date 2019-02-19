@@ -32,11 +32,10 @@ class News_d extends Component{
     }
 }
 const mapStateToProps=(state)=>({
-    newsDetail:state.toJS().search.newsDetail
+    newsDetail:state.toJS().home.newsDetail
 })
 const mapDispatchToProps=(dispatch)=>({
     getHotPointDetail(){
-        console.log(this);
         dispatch(action.getHotPointDetail(this.match.params.newsId))
     }
 })

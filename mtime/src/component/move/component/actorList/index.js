@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import {withRouter } from 'react-router-dom';
 import action from "../../../../store/action";
 import '../../move.css'
+import Header_d from '../../../header/index'
 import BScroll from 'better-scroll'
 class Move_actorlist_d extends Component{
     render (){
@@ -10,10 +11,6 @@ class Move_actorlist_d extends Component{
         console.log(peopleType);
         return (
             <div className="move_actorlist_d">
-                    <div className="move_active_header_d">
-                        <i className="iconfont move_active_header_goback_d" onClick={this.actorList_goback.bind(this)}>&#xe6b0;</i>
-                        <p className="move_active_header_title_d">演职员表</p>
-                    </div>
                     <div className="move_actorlist_scroll_d" ref="move_actorlist_scroll_d">
                     <div className="move_active_ul_d">
                         {
@@ -66,7 +63,8 @@ const mapStateToProps=(state)=>({
 })
 const mapDispatchToProps=(dispatch)=>({
     getMoveActor_d(){
+        console.log(this);
         dispatch(action.getMoveActor_d(this.match.params.id))
     }
 })
-export default withRouter(connect(mapStateToProps,mapDispatchToProps)(Move_actorlist_d))
+export default withRouter(Header_d(withRouter(connect(mapStateToProps,mapDispatchToProps)(Move_actorlist_d))))

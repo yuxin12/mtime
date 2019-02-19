@@ -4,7 +4,6 @@ import action from "../../../store/action";
 class New_main_d extends Component{
     render(){
         let {newsDetail}=this.props;
-        console.log(newsDetail.content)
         return (
             <div className="news_main_all_d">
                 {
@@ -15,7 +14,7 @@ class New_main_d extends Component{
     }
 }
 const mapStateToProps=(state)=>({
-    newsDetail:state.toJS().search.newsDetail
+    newsDetail:state.toJS().home.newsDetail
 })
 const mapDispatchToProps=(dispatch)=>({
 
